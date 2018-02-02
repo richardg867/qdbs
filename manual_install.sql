@@ -40,6 +40,7 @@ CREATE TABLE `admins` (
 CREATE TABLE `queue` (
   `id` int(11) NOT NULL auto_increment,
   `quote` longtext NOT NULL,
+  `ip` text NOT NULL,
   PRIMARY KEY  (`id`)
 ) TYPE=MyISAM AUTO_INCREMENT=1 ;
 

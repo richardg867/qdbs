@@ -77,6 +77,7 @@ if (!empty($_POST['do'])) {
             @mysqli_query($db, "CREATE TABLE " . $_POST['i_tableprefix'] . "queue (
               id int(11) NOT NULL auto_increment,
               quote longtext NOT NULL,
+              ip text NOT NULL,
               PRIMARY KEY  (id)
             )") or die (mysqli_error($db));
 

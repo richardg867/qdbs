@@ -265,6 +265,8 @@ if (!empty($_GET['do']) || !empty($_POST['do'])) {
             if(mysqli_num_rows($r) > 0) {
                 while ($row = $db->fetch_row($r)) {
                     $tpl->set('q_id', $row['id']);
+                    $tpl->set('q_ip', $row['ip']);
+                    $tpl->set('q_ip_r', gethostbyaddr($row['ip']));
                     $tpl->set('quote', $row['quote']);
                     print($tpl->fetch('.'.$tpl->tdir.'admin_block.tpl'));
                 }
