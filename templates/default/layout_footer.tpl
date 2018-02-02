@@ -12,7 +12,7 @@
         </tr>
         <tr>
           <td class="salty" align="center">
-            Powered by <a href="http://www.qdbs.org/" target="_blank">QdbS</a> <?php echo $version;?><br>
+            Powered by <a href="https://github.com/richardg867/qdbs" target="_blank">QdbS-MarkovDB</a> <?php echo $version;?><br>
           </td>
         </tr>
       </table>
