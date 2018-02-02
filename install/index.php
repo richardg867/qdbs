@@ -128,6 +128,8 @@ if (!empty($_POST['do'])) {
    			$settings .= '$_qdbs[\'password\'] = \''.$_POST['i_password'].'\';'."\n";
    			$settings .= '$_qdbs[\'db\'] = \''.$_POST['i_database'].'\';'."\n";
 			$settings .= '$_qdbs[\'tpfx\'] = \''.$_POST['i_tableprefix'].'\';'."\n";
+      $settings .= '$_qdbs[\'recaptcha_sitekey\'] = \''.$_POST['i_recaptcha_sitekey'].'\';'."\n";
+      $settings .= '$_qdbs[\'recaptcha_secret\'] = \''.$_POST['i_recaptcha_secret'].'\';'."\n";
    			$settings .= 'define(\'INSTALLED\', true);'."\n";
    			$settings .= '?'.'>';
 

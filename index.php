@@ -102,6 +102,31 @@ if (!empty($_GET['do']) || !empty($_POST['do'])) {
                  if (empty($_POST['quote'])) {
                      break;
                  }
+
+                 if (!empty($_qdbs['recaptcha_secret'])) {
+                      if (empty($_POST['g-recaptcha-response'])) {
+                        print($tpl->fetch($tpl->tdir.'layout_header.tpl'));
+                        print($tpl->fetch($tpl->tdir.'quote_captcha.tpl'));
+                        print($tpl->fetch($tpl->tdir.'layout_footer.tpl'));
+                        break;
+                      }
+
+                      $ch = curl_init();
+                      curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+                      curl_setopt($ch, CURLOPT_POST, 1);
+                      curl_setopt($ch, CURLOPT_POSTFIELDS, "fixyour=stuffgoogle&secret=".$_qdbs['recaptcha_secret']."&response=".urlencode($_POST['g-recaptcha-response'])."&remoteip=".$_SERVER['REMOTE_ADDR']);
+                      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                      $out = curl_exec($ch);
+                      curl_close($ch);
+                      $resp = json_decode($out);
+                      if (!$resp->success) {
+                           print($tpl->fetch($tpl->tdir.'layout_header.tpl'));
+                           print($tpl->fetch($tpl->tdir.'quote_captcha.tpl'));
+                           print($tpl->fetch($tpl->tdir.'layout_footer.tpl'));
+                           break;
+                      }
+                 }
+
                  $quote = htmlspecialchars($_POST['quote']);
                  $quote = str_replace("  ", "&nbsp;&nbsp;", $quote);
                  $quote = nl2br($quote);
@@ -270,6 +295,7 @@ if (!empty($_GET['do']) || !empty($_POST['do'])) {
                 print($tpl->fetch($tpl->tdir.'quote_search.tpl'));
                 break;
             case 'add':
+                $tpl->set('recaptcha_sitekey', $_qdbs['recaptcha_sitekey']);
                 print($tpl->fetch($tpl->tdir.'quote_add.tpl'));
                 break;
         }

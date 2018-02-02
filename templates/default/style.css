@@ -70,3 +70,8 @@ body {
     Background-Color: #F4F4F4;
     Border: #BBBBBB 1px solid;
 }
+
+.quote {
+    font-family: monospace !important;
+    font-size: 10pt !important;
+}

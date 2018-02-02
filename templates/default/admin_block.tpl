@@ -5,7 +5,7 @@
                 </td>
               </tr>
               <tr align="left">
-                <td class="body">
+                <td class="body quote">
                   <?php echo $quote;?>
                 </td>
               </tr>

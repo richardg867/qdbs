@@ -29,6 +29,8 @@
                     Quotes Per Page:<br><input type="text" name="i_limit" size="40" value="50" maxlength="4" class="form"><br>
                     Template:<br><input type="text" name="i_template" size="40" value="./templates/default/" maxlength="40" class="form"><br>
                     CSS Style:<br><input type="text" name="i_style" size="40" value="style.css" maxlength="40" class="form"><br>
+                    reCAPTCHA site key:<br><input type="text" name="i_recaptcha_sitekey" size="40" class="form"><br>
+                    reCAPTCHA secret key:<br><input type="text" name="i_recaptcha_secret" size="40" class="form"><br>
                     <input type="submit" value="Install" class="form">
                   </form>
                 </td>

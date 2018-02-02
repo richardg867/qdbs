@@ -2,6 +2,7 @@
   <head>
     <title><?php echo $title;?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo $style;?>">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
     <center>
