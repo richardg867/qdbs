@@ -19,11 +19,11 @@
                 <table width="100%" cellpadding="3" cellspacing="0">
                   <tr>
                     <td class="border" align="center">
-                      <a href="index.php"><b>home</b></a> / <a href="index.php?p=top"><b>top</b></a> /
-                      <a href="index.php?p=bottom"><b>bottom</b></a> / <a href="index.php?p=latest"><b>latest</b></a> /
-                      <a href="index.php?p=random"><b>random</b></a><a href="index.php?p=random1"><b>&gt;0</b></a> /
-                      <a href="index.php?p=browse"><b>browse</b></a> / <a href="index.php?p=search"><b>search</b></a> /
-                      <a href="index.php?p=add"><u><b>add</b></u></a> / <a href="./admin/">admin</a>
+                      <a href="index.php"><b>home</b></a> &bull; <a href="index.php?p=top"><b>top</b></a> &bull;
+                      <a href="index.php?p=bottom"><b>bottom</b></a> &bull; <a href="index.php?p=latest"><b>latest</b></a> &bull;
+                      <a href="index.php?p=random"><b>random</b></a><a href="index.php?p=random1"><b>&gt;0</b></a> &bull;
+                      <a href="index.php?p=browse"><b>browse</b></a> &bull; <a href="index.php?p=search"><b>search</b></a> &bull;
+                      <a href="index.php?p=add"><u><b>add</b></u></a> &bull; <a href="./admin/">admin</a>
                     </td>
                   </tr>
                 </table>

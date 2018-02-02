@@ -1,1 +1,1 @@
-<a href="./index.php"><b>home</b></a> / <a href="./index.php?p=settings"><b>settings</b></a> / <a href="./index.php?do=logout"><b>logout</b></a>
+<a href="./index.php"><b>home</b></a> &bull; <a href="./index.php?p=settings"><b>settings</b></a> &bull; <a href="./index.php?do=logout"><b>logout</b></a> &bull; <a href="../index.php"><b>back to qdb</b></a>
