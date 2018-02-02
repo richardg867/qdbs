@@ -100,6 +100,11 @@ p {
   display: block;
 }
 
+.quote {
+  font-family: monospace !important;
+  font-size: 10pt !important;
+}
+
 /********************
 
   side stuff
@@ -157,4 +162,3 @@ p {
   margin: 0;
   padding: 0;
 }
-

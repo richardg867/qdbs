@@ -116,6 +116,11 @@ img {
   display: block;
 }
 
+.quote {
+  font-family: monospace !important;
+  font-size: 10pt !important;
+}
+
 /********************
 
   side stuff
